@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/* CONFIGURAÇÕES GLOBAIS */
+* {}
+
+/* CORPO */
+body {}
+
+.container {}
+
+/* SEÇÃO DE ENTRADA */
+.secaoEntrada {}
+
+/* CABEÇALHO */
+.secaoEntrada__cabecalho {}
+
+.secaoEntrada__logo {}
+
+.secaoEntrada__logo a {}
+
+.secaoEntrada__logo a strong {}
+
+/* ÁREA DE NAVEGAÇÃO */
+.secaoEntrada__navegacao {}
+
+.listaLinks {}
+
+.listaLinks__item {}
+
+.listaLinks__item a {}
+
+.listaLinks__item .underline {}
+
+/* CONTEÚDO */
+.conteudo {}
+
+/* SEÇÃO DE DESCRIÇÃO DA EMPRESA */
+.secaoDescricaoEmpresa {}
+
+.secaoDescricaoEmpresa h2 {}
+
+.secaoDescricaoEmpresa__paragrafo {}
+
+.secaoDescricaoEmpresa__paragrafo--italic {}
+
+.secaoDescricaoEmpresa__assinaturaEmpresa {}
+
+.secaoDescricaoEmpresa__assinaturaEmpresa img {}
+
+.secaoDescricaoEmpresa__assinaturaEmpresa figcaption {}
+
+/* SEÇÃO O QUE FAZEMOS */
+.secaoOqueFazemos {}
+
+.secaoOqueFazemos h2 {}
+
+.secaoOqueFazemos h2 strong {}
+
+.efeitoParalax {}
+
+/* SEÇÃO NOSSOS PROJETOS */
+.secaoNossosProjetos {}
+
+.secaoNossosProjetos__descricao {}
+
+.secaoNossosProjetos__descricao h2 {}
+
+/* LISTA DE PROJETOS */
+.listaProjetos {}
+
+.listaProjetos__projeto {}
+
+.listaProjetos__projeto img {}
+
+.listaProjetos__nomeLugar {}
+
+/* SEÇÃO CONTATO */
+.secaoContato {}
+
+.secaoContato h2 {}
+
+.secaoContato a {}
+
+/* RODAPÉ */
+.rodape {}
+
+.rodape p {}
+
+.rodape p a {}
