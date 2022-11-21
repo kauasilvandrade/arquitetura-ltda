@@ -218,22 +218,67 @@ body {
 .efeitoParalax {}
 
 /* SEÇÃO NOSSOS PROJETOS */
-.secaoNossosProjetos {}
+.secaoNossosProjetos {
+    padding: 2rem 0.5rem;
+}
 
 .secaoNossosProjetos__descricao {}
 
-.secaoNossosProjetos__descricao h2 {}
-
-/* LISTA DE PROJETOS */
-.listaProjetos {}
-
-.listaProjetos__projeto {}
-
-.listaProjetos__projeto img {
-    width: 20px;
+.secaoNossosProjetos__descricao h2 {
+    color: #393939;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 2em;
+    /* font-size: 2.2em; */
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-.listaProjetos__nomeLugar {}
+/* LISTA DE PROJETOS */
+.listaProjetos {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.listaProjetos__projeto {
+    display: flex;
+    height: 30rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.listaProjetos__projeto:nth-child(1) {
+    background-image: url(../img/fundo-1.jpg);
+    background-size: unset;
+}
+.listaProjetos__projeto:nth-child(2) {
+    background-image: url(../img/fundo-2.jpg);
+
+}
+.listaProjetos__projeto:nth-child(3) {
+    background-image: url(../img/fundo-3.jpg);
+}
+
+.listaProjetos__imgFundo {}
+
+.listaProjetos__nomeLugar {
+    color: #393939;
+    display: block;
+    background-color: white;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1em;
+}
 
 /* SEÇÃO CONTATO */
 .secaoContato {}
