@@ -198,12 +198,6 @@ body {
 /* SEÇÃO O QUE FAZEMOS */
 .secaoOqueFazemos {
     background-image: url(../img/fundo-2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    /* padding: 10rem 2rem; */
-    padding: 3rem 1rem;
 }
 
 .secaoOqueFazemos h2 {
@@ -215,7 +209,14 @@ body {
 
 .secaoOqueFazemos h2 strong {}
 
-.efeitoParalax {}
+.efeitoParalax {
+    padding: 3rem 1rem;
+    /* padding: 10rem 2rem; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
 
 /* SEÇÃO NOSSOS PROJETOS */
 .secaoNossosProjetos {
@@ -281,15 +282,45 @@ body {
 }
 
 /* SEÇÃO CONTATO */
-.secaoContato {}
+.secaoContato {
+    background-image: url(../img/fundo-4.jpg);
+}
 
-.secaoContato h2 {}
+.secaoContato h2 {
+    color: white;
+    font-weight: 100;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    font-size: 1.8em;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
 
-.secaoContato a {}
+.secaoContato a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid white;
+    padding: 1rem 3rem;
+}
 
 /* RODAPÉ */
-.rodape {}
+.rodape {
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    text-align: center;
+}
 
-.rodape p {}
+.rodape p {
+    line-height: 1.6em;
+    color: #ccc;
+}
 
-.rodape p a {}
+.rodape p a {
+    text-decoration: underline;
+    color: white;
+}
