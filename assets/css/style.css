@@ -58,7 +58,9 @@ body {
 }
 
 /* ÁREA DE NAVEGAÇÃO */
-.secaoEntrada__navegacao {}
+.secaoEntrada__navegacao {
+    overflow: hidden;
+}
 
 /* BOTÃO ABRIR MENU */
 #btnOpenMenu {
@@ -83,18 +85,25 @@ body {
 }
 
 /* BOTÃO FECHAR MENU */
-#btnCloseMenu {
+.btnCloseMenu {
     background-color: transparent;
     border: transparent;
     cursor: pointer;
     padding-right: 0.5rem;
-    display: none;
+    position: fixed;
+    right: -100%;
+    top: 2rem;
+    z-index: 2;
+    transition: .5s;
+}
+
+.btnCloseMenu.aparecer {
+    right: 0.7rem;
 }
 
 .btnCloseMenu__hamburguer::before, .btnCloseMenu__hamburguer::after {
     content: '';
     display: block;
-    z-index: 1;
     height: 0.13rem;
     width: 1.5rem;
     background-color: #9d9d9d;
@@ -115,16 +124,23 @@ body {
     background-color: white;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -100%;
     list-style-type: none;
     width: 16rem;
     height: 100vh;
-    display: none;
+    display: flex;
     align-items: center;
     flex-direction: column;
     padding: 5.5rem 1.5rem 1.5rem 1.5rem;
     font-size: 1em;
     font-weight: 500;
+    z-index: 1;
+    transition: .5s;
+}
+
+/* CLASSE ATIVADA COM JAVASCRIPT */
+.listaLinks.ativado {
+    right: 0;
 }
 
 .listaLinks__item {
@@ -190,7 +206,7 @@ body {
 
 .secaoDescricaoEmpresa__assinaturaEmpresa img {
     width: 100%;
-    max-width: 350px;
+    max-width: 320px;
 }
 
 .secaoDescricaoEmpresa__assinaturaEmpresa figcaption {}
@@ -302,6 +318,11 @@ body {
     color: white;
     border: 1px solid white;
     padding: 1rem 3rem;
+}
+
+.secaoContato a:hover {
+    background-color: #ffffff2b;
+    transition: .5s ease-in-out;
 }
 
 /* RODAPÉ */

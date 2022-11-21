@@ -17,6 +17,10 @@
         display: none;
     }
 
+    .btnCloseMenu {
+        display: none;
+    }
+
     /* LISTA DO MENU */
     .listaLinks {
         display: flex;
@@ -26,7 +30,8 @@
         height: auto;
         width: 100%;
         padding: 0;
-        gap: 1rem;
+        gap: 1.5rem;
+        transition: unset;
     }
 
     .listaLinks__item {
@@ -57,5 +62,47 @@
         transform: scale(0);
         transition: .2s ease-in-out;
     }
+
+    /* SEÇÃO DA DESCRIÇÃO DA EMPRESA */
+    .secaoDescricaoEmpresa {
+        padding: 3.5rem 3rem;
+    }
+
+    .secaoDescricaoEmpresa h2 {
+        font-size: 2.2em;
+    }
+
+    /* SEÇÃO O QUE FAZEMOS */
+    .efeitoParalax {
+        background-attachment: fixed;
+        padding: 8rem 2rem;
+    }
+
+    /* SEÇÃO NOSSOS PROJETOS */
+    .secaoNossosProjetos {
+        padding: 3rem 0.9rem;
+    }
+
+    .secaoNossosProjetos__descricao h2 {
+        font-size: 2.2em;
+    }
+
+    /* LISTA DE PROJETOS */
+    .listaProjetos {
+        flex-direction: row;
+    }
+
+    .listaProjetos__projeto:hover {
+        opacity: 0.9;
+        filter: blur(1px);
+        transition: .5s;
+    }
+
+    /* SEÇÃO CONTATO */
+    .secaoContato h2 {
+        font-size: 2em;
+        margin-bottom: 3.5rem;
+    }
+
 
 }

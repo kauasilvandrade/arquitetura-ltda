@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="assets/css/responsivade.css">
 
 </head>
-<body>
+<body onresize="mudouTamanho()">
     
     <!-- SEÇÃO DE ENTRADA -->
     <section class="secaoEntrada">
@@ -35,20 +35,28 @@
             <nav class="secaoEntrada__navegacao">
 
                 <!-- BOTÃO ABRIR MOBILE -->
-                <button id="btnOpenMenu">
+                <button id="btnOpenMenu"
+                aria-label="botão abrir menu"
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-controls="menu">
 
                     <span class="btnOpenMenu__hamburguer"></span>
 
                 </button>
 
                 <!-- BOTÃO FECHAR MOBILE -->
-                <button id="btnCloseMenu">
+                <button id="btnCloseMenu" class="btnCloseMenu"
+                aria-label="botão fechar menu"
+                aria-expanded="true"
+                aria-haspopup="true"
+                aria-controls="menu">
 
                     <span class="btnCloseMenu__hamburguer"></span>
 
                 </button>
 
-                <ul class="listaLinks">
+                <ul class="listaLinks" id="menu" role="menu">
 
                     <li class="listaLinks__item">
 
@@ -194,6 +202,8 @@
         <p>Desenvolvido por <a href="https://github.com/kauasilvandrade" target="_blank" rel="external">Kauã</a></p>
 
     </footer>
+
+    <script defer src="assets/js/script.js"></script>
 
 </body>
 </html>
