@@ -17,15 +17,27 @@ body {
 /* SEÇÃO DE ENTRADA */
 .secaoEntrada {
     background-image: url('../img/fundo-1.jpg');
+    background-repeat: no-repeat;
     height: 20rem;
+    background-size: cover;
+    background-position: center;
 }
 
-.secaoEntrada h1 {}
+.secaoEntrada h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.25em;
+    font-weight: 100;
+    background-color: #0000008c;
+}
 
 /* CABEÇALHO */
 .secaoEntrada__cabecalho {
     background-color: #00000070;
     padding: 1.5rem 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .secaoEntrada__logo {}
@@ -45,13 +57,89 @@ body {
 /* ÁREA DE NAVEGAÇÃO */
 .secaoEntrada__navegacao {}
 
-.listaLinks {
+/* BOTÃO ABRIR MENU */
+#btnOpenMenu {
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    padding-right: 0.5rem;
+}
+
+.btnOpenMenu__hamburguer {
+    display: block;
+    border-top: 2px solid white;
+}
+
+.btnOpenMenu__hamburguer::before, .btnOpenMenu__hamburguer::after {
+    content: '';
+    display: block;
+    height: 0.16rem;
+    width: 1.5rem;
+    background-color: white;
+    margin: 5px 0;
+}
+
+/* BOTÃO FECHAR MENU */
+#btnCloseMenu {
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    padding-right: 0.5rem;
     display: none;
 }
 
-.listaLinks__item {}
+.btnCloseMenu__hamburguer::before, .btnCloseMenu__hamburguer::after {
+    content: '';
+    display: block;
+    z-index: 1;
+    height: 0.13rem;
+    width: 1.5rem;
+    background-color: #9d9d9d;
+    position: relative;
+}
 
-.listaLinks__item a {}
+.btnCloseMenu__hamburguer::before {
+    transform: rotate(135deg);
+}
+
+.btnCloseMenu__hamburguer::after {
+    transform: rotate(-135deg);
+    top: -2px;
+}
+
+/* LISTA DE LINKS MENU */
+.listaLinks {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    list-style-type: none;
+    width: 16rem;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    padding: 5.5rem 1.5rem 1.5rem 1.5rem;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.listaLinks__item {
+    width: 100%;
+}
+
+.listaLinks__item a {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #9d9d9d;
+    border-bottom: 1px solid hsla(0,0%,73%,.4);
+    padding: 1rem 0;
+}
+
+.listaLinks__item:nth-child(1) {
+    border-top: 1px solid hsla(0,0%,73%,.4);
+}
 
 .listaLinks__item .underline {}
 
@@ -69,7 +157,9 @@ body {
 
 .secaoDescricaoEmpresa__assinaturaEmpresa {}
 
-.secaoDescricaoEmpresa__assinaturaEmpresa img {}
+.secaoDescricaoEmpresa__assinaturaEmpresa img {
+    width: 20px;
+}
 
 .secaoDescricaoEmpresa__assinaturaEmpresa figcaption {}
 
@@ -94,7 +184,9 @@ body {
 
 .listaProjetos__projeto {}
 
-.listaProjetos__projeto img {}
+.listaProjetos__projeto img {
+    width: 20px;
+}
 
 .listaProjetos__nomeLugar {}
 
