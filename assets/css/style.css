@@ -12,7 +12,10 @@ body {
     font-family: Helvetica, sans-serif;
 }
 
-.container {}
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
 
 /* SEÇÃO DE ENTRADA */
 .secaoEntrada {
@@ -147,26 +150,68 @@ body {
 .conteudo {}
 
 /* SEÇÃO DE DESCRIÇÃO DA EMPRESA */
-.secaoDescricaoEmpresa {}
+.secaoDescricaoEmpresa {
+    padding: 2rem;
+    /* padding: 3.5rem 3rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-.secaoDescricaoEmpresa h2 {}
+.secaoDescricaoEmpresa h2 {
+    color: #393939;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 2em;
+    /* font-size: 2.2em; */
+    text-align: center;
+    margin-bottom: 2rem;
+}
 
-.secaoDescricaoEmpresa__paragrafo {}
+.secaoDescricaoEmpresa__paragrafo, .secaoDescricaoEmpresa__paragrafo--italico {
+    margin-bottom: 1rem;
+    line-height: 1.6em;
+    font-size: 1.1em;
+}
 
-.secaoDescricaoEmpresa__paragrafo--italic {}
+.secaoDescricaoEmpresa__paragrafo {
+    color: #666;
+    text-align: justify;
+}
+
+.secaoDescricaoEmpresa__paragrafo--italico {
+    color: #9d9d9d;
+    font-style: italic;
+    text-align: center;
+}
 
 .secaoDescricaoEmpresa__assinaturaEmpresa {}
 
 .secaoDescricaoEmpresa__assinaturaEmpresa img {
-    width: 20px;
+    width: 100%;
+    max-width: 350px;
 }
 
 .secaoDescricaoEmpresa__assinaturaEmpresa figcaption {}
 
 /* SEÇÃO O QUE FAZEMOS */
-.secaoOqueFazemos {}
+.secaoOqueFazemos {
+    background-image: url(../img/fundo-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    /* padding: 10rem 2rem; */
+    padding: 3rem 1rem;
+}
 
-.secaoOqueFazemos h2 {}
+.secaoOqueFazemos h2 {
+    color: white;
+    font-weight: 100;
+    text-transform: uppercase;
+    line-height: 1.5em;
+}
 
 .secaoOqueFazemos h2 strong {}
 

@@ -20,84 +20,79 @@
     <!-- SEÇÃO DE ENTRADA -->
     <section class="secaoEntrada">
 
-        <!-- CONTAINER -->
-        <div class="container">
+        <!-- CABEÇALHO -->
+        <header class="secaoEntrada__cabecalho">
+            
+            <!-- LOGO -->
+            <div class="secaoEntrada__logo">
 
-            <!-- CABEÇALHO -->
-            <header class="secaoEntrada__cabecalho">
-                
-                <!-- LOGO -->
-                <div class="secaoEntrada__logo">
+                <a href="#"><strong>Creare</strong>Arquitetura LTDA.</a>
 
-                    <a href="#"><strong>Creare</strong>Arquitetura LTDA.</a>
+            </div>
 
-                </div>
+            <!-- ÁREA DE NAVEGAÇÃO -->
+            <nav class="secaoEntrada__navegacao">
 
-                <!-- ÁREA DE NAVEGAÇÃO -->
-                <nav class="secaoEntrada__navegacao">
+                <!-- BOTÃO ABRIR MOBILE -->
+                <button id="btnOpenMenu">
 
-                    <!-- BOTÃO ABRIR MOBILE -->
-                    <button id="btnOpenMenu">
+                    <span class="btnOpenMenu__hamburguer"></span>
 
-                        <span class="btnOpenMenu__hamburguer"></span>
+                </button>
 
-                    </button>
+                <!-- BOTÃO FECHAR MOBILE -->
+                <button id="btnCloseMenu">
 
-                    <!-- BOTÃO FECHAR MOBILE -->
-                    <button id="btnCloseMenu">
+                    <span class="btnCloseMenu__hamburguer"></span>
 
-                        <span class="btnCloseMenu__hamburguer"></span>
+                </button>
 
-                    </button>
+                <ul class="listaLinks">
 
-                    <ul class="listaLinks">
+                    <li class="listaLinks__item">
 
-                        <li class="listaLinks__item">
+                        <a href="#">Início</a>
 
-                            <a href="#">Início</a>
+                        <!-- LINHA QUE VAI SER MOSTRADA COM O HOVER -->
+                        <div class="underline"></div>
 
-                            <!-- LINHA QUE VAI SER MOSTRADA COM O HOVER -->
-                            <div class="underline"></div>
+                    </li>
 
-                        </li>
+                    <li class="listaLinks__item">
 
-                        <li class="listaLinks__item">
+                        <a href="#">Sobre nós</a>
 
-                            <a href="#">Sobre nós</a>
+                        <!-- LINHA QUE VAI SER MOSTRADA COM O HOVER -->
+                        <div class="underline"></div>
 
-                            <!-- LINHA QUE VAI SER MOSTRADA COM O HOVER -->
-                            <div class="underline"></div>
+                    </li>
 
-                        </li>
+                    <li class="listaLinks__item">
 
-                        <li class="listaLinks__item">
+                        <a href="#">Projetos</a>
 
-                            <a href="#">Projetos</a>
+                        <!-- LINHA QUE VAI SER MOSTRADA COM O HOVER -->
+                        <div class="underline"></div>
 
-                            <!-- LINHA QUE VAI SER MOSTRADA COM O HOVER -->
-                            <div class="underline"></div>
+                    </li>
 
-                        </li>
+                    <li class="listaLinks__item">
 
-                        <li class="listaLinks__item">
+                        <a href="#">Contato</a>
 
-                            <a href="#">Contato</a>
+                        <!-- LINHA QUE VAI SER MOSTRADA COM O HOVER -->
+                        <div class="underline"></div>
 
-                            <!-- LINHA QUE VAI SER MOSTRADA COM O HOVER -->
-                            <div class="underline"></div>
+                    </li>
 
-                        </li>
+                </ul>
 
-                    </ul>
+            </nav>
 
-                </nav>
+        </header>
 
-            </header>
-
-            <!-- TÍTULO DA PÁGINA -->
-            <h1>Soluções para Arquitetura Urbanismo e Paisagismo</h1>
-
-        </div>
+        <!-- TÍTULO DA PÁGINA -->
+        <h1>Soluções para Arquitetura Urbanismo e Paisagismo</h1>
 
     </section>
 
@@ -105,11 +100,11 @@
     <main class="conteudo">
 
         <!-- SEÇÃO DE DESCRIÇÃO DA EMPRESA -->
-        <section class="secaoDescricaoEmpresa">
+        <section class="secaoDescricaoEmpresa container">
 
             <h2>Creare Arquitetura Ltda</h2>
 
-            <p class="secaoDescricaoEmpresa__paragrafo secaoDescricaoEmpresa__paragrafo--italico">
+            <p class="secaoDescricaoEmpresa__paragrafo--italico">
                 <em>Aqui é onde o seu texto começa. Basta clicar e começar a escrever. Aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta hsunt.</em>
             </p>
 
@@ -121,7 +116,7 @@
 
                 <img src="assets/img/assinatura.png" alt="Assinatura feita pela empresa">
 
-                <figcaption>Assinatura feita pela empresa</figcaption>
+                <figcaption hidden>Assinatura feita pela empresa</figcaption>
 
             </figure>
 
