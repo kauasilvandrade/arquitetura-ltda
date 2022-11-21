@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 700px) {
+    
+    /* CABEÇALHO */
+    .secaoEntrada__cabecalho {
+        padding: 0.8rem 2rem;
+    }
+
+    .secaoEntrada__logo a {
+        font-size: 1.3em;
+    }
+
+    
+    /* BOTÃO MOBILE */
+    #btnOpenMenu {
+        display: none;
+    }
+
+    /* LISTA DO MENU */
+    .listaLinks {
+        display: flex;
+        flex-direction: revert;
+        background-color: transparent;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .listaLinks__item {
+        position: relative;
+        width: auto;
+    }
+    
+    .listaLinks__item:nth-child(1) {
+        border-top: unset;
+    }
+
+    .listaLinks__item a {
+        border-bottom: unset;   
+        color: white;
+    }
+
+    .listaLinks__item a:hover ~ .underline::before {
+        transform: scale(1);
+    }
+    
+    .listaLinks__item .underline::before {
+        content: '';
+        width: 100%;
+        position: absolute;
+        background-color: white;
+        height: 1px;
+        bottom: 7px;
+        transform: scale(0);
+        transition: .2s ease-in-out;
+    }
+
+}

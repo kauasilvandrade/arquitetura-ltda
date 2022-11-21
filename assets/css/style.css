@@ -21,7 +21,7 @@ body {
 .secaoEntrada {
     background-image: url('../img/fundo-1.jpg');
     background-repeat: no-repeat;
-    height: 20rem;
+    height: 40rem;
     background-size: cover;
     background-position: center;
 }
@@ -220,7 +220,7 @@ body {
 
 /* SEÇÃO NOSSOS PROJETOS */
 .secaoNossosProjetos {
-    padding: 2rem 0.5rem;
+    padding: 2rem 0.9rem;
 }
 
 .secaoNossosProjetos__descricao {}
@@ -291,7 +291,7 @@ body {
     font-weight: 100;
     text-transform: uppercase;
     line-height: 1.5em;
-    font-size: 1.8em;
+    font-size: 1.6em;
     margin-bottom: 1.5rem;
     font-weight: 600;
 }
