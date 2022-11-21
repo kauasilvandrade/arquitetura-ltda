@@ -2,6 +2,11 @@
 
 @media screen and (min-width: 700px) {
     
+    /* SEÇÃO ENTRADA */
+    .secaoEntrada {
+        height: 42rem;
+    }
+
     /* CABEÇALHO */
     .secaoEntrada__cabecalho {
         padding: 0.8rem 2rem;
@@ -9,6 +14,12 @@
 
     .secaoEntrada__logo a {
         font-size: 1.3em;
+    }
+
+    .secaoEntrada h1 {
+        font-size: 2.8em;
+        padding-left: 2rem;
+        margin-top: 11.5rem;
     }
 
     
